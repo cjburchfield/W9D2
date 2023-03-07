@@ -1,0 +1,12 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "Tick Taco Toes",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch --mode=development"
+  },
+  "keywords": [],
+  "author": "Jamie the GOAT and Gary the SHEEP",
+  "license": "ISC"
+}
