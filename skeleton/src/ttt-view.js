@@ -1,8 +1,8 @@
 class View {
-  constructor(game, el) {
+  constructor(game, container) {
     this.game = game;
-    this.el = el;
-    this.setupBoard(el);
+    this.container = container;
+    this.setupBoard(container);
   }
 
   setupBoard() {
@@ -21,7 +21,10 @@ class View {
   
   bindEvents() {}
 
-  handleClick(e) {}
+  handleClick(container) {
+    let cell = container.target;
+    "li" === cell.nodeName && this.makeMove(cell)
+  }
 
   makeMove(square) {}
 

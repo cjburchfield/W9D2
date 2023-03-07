@@ -1,15 +1,16 @@
 ul {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  height: 300px;
+  width: 316px;
+  height: 316px;
   border: 2px solid black;
   list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-  width: 100px;
-  height: 100px;
+  width: 98px;
+  height: 98px;
   background-color: gray;
   border: 2px solid black;
 }
