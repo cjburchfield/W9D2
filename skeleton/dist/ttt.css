@@ -20,3 +20,11 @@ ul li {
 ul li:hover {
   background-color: yellow;
 }
+
+.x {
+  background-color: white;
+}
+
+.o{
+  background-color: red;
+}

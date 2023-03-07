@@ -3,6 +3,7 @@ class View {
     this.game = game;
     this.container = container;
     this.setupBoard();
+    this.bindEvents();
   }
 
   setupBoard() {
@@ -25,11 +26,12 @@ class View {
 
   handleClick(container) {
     let cell = container.target;
-    "li" === cell.nodeName && this.makeMove(cell)
+    "li" === cell.nodeName && this.makeMove(cell);
   }
 
   makeMove(square) {
-    this.game.playMove(cell.pos)
+    square.classList.add(this.game.currentPlayer);
+    this.game.playMove(square.pos);
   }
 
 }
